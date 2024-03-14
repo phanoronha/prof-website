@@ -523,3 +523,9 @@ footer .cols .links-col .item a:hover {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .navbar ul li a {
+        font-size: 12px;
+    }
+}
