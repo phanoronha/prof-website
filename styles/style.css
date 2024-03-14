@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #F9F7F7;
+    --cor-secundaria: #3F72AF;
+    --cor-terciaria: #112D4E;
+    --cor-hover: #DBE2EF;
+}
+
+body {
+    background-color: var(--cor-principal);
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    width: 10%;
+}
+
+.navbar {
+    position: fixed;
+    background-color: var(--cor-principal);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    padding: 0 35px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.navbar ul {
+    display: flex; 
+    gap: 10px; 
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--cor-secundaria);
+    transition: all 0.3s ease;
+    padding: 6px;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+
+.navbar ul li a:hover {
+    box-shadow: 3px 3px 3px 3px var(--cor-hover);
+}
+
+.btn-hire {
+    color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
+    border-radius: 6px;
+    padding: 8px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+
+}
+
+.btn-hire:hover {
+    background-color: var(--cor-terciaria);
+}
+
+.content {
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30%;
+    gap: 10px;
+}
+
+.title {
+    color: var(--cor-secundaria);
+    font-size: 36px;
+}
+
+.title__strong {
+    color: var(--cor-terciaria);
+    text-decoration: underline;
+}
+
+.subtitle {
+    color: var(--cor-secundaria);
+    font-size: 18px;
+}
+
+.subtitle__strong {
+    color: var(--cor-terciaria);
+}
+
+.guarantee {
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+
+.guarantee .item {
+    background-color: var(--cor-hover);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0 30px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.guarantee .item:hover {
+    border-color: var(--cor-secundaria);
+}
+
+.icon {
+    height: 46px;
+    width: 46px;
+    background-color: var(--cor-principal);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.icon i {
+    font-size: 30px;
+}
+
+.guarantee .item:hover .icon {
+    background-color: var(--cor-secundaria);
+}
+
+.guarantee .item i {
+    font-size: 30px;
+    color: var(--cor-secundaria);
+    transition: all 0.3s ease;
+}
+
+.guarantee .item:hover i {
+    color: var(--cor-principal);
+}
+
+
+.guarantee .item .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-terciaria);
+}
+
+.guarantee .item .info h3 {
+    color: var(--cor-secundaria);
+    font-size: 28px;
+}
+
+.guarantee .item .info p {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.separator {
+    margin: 70px 70px 50px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--cor-hover);
+    display: inline-block;
+    color: var(--cor-secundaria);
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 9%;
+    
+}
+
+.about .info h3 {
+    color: var(--cor-secundaria);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.about .info p {
+    color: var(--cor-terciaria);
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.about .info button {
+    margin-top: 30px;
+    padding: 12px 45px;
+    font-size: 24px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.skills .left {
+    width: 680px;
+}
+
+.skills .left .info h3 {
+    color: var(--cor-secundaria);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px; 
+}
+
+.skills .left .info p {
+    color: var(--cor-terciaria);
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.skills .left .info button {
+    margin-top: 30px;
+    padding: 12px 45px;
+    font-size: 24px
+}
+
+.skills .right {
+    height: 120px;
+    width: 620px;
+    margin-bottom: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+}
+
+.skills .right .item {
+    background-color: var(--cor-hover);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.skills .right .item:hover {
+    border-color: var(--cor-secundaria);
+}
+
+.skills .right .item i {
+    font-size: 80px;
+    color: var(--cor-terciaria);
+}
+
+footer {
+    position: relative;
+    margin-top: 120px;
+    padding: 80px 50px 40px;
+    background-color: var(--cor-hover);
+}
+
+footer .start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    background-color: var(--cor-terciaria);
+    padding: 30px 25px;
+    border-radius: 15px;
+    width: 70%;
+    top: -16%;
+    left: 15%;
+    box-shadow: 5px 5px 2.5px black;
+}
+
+footer .start h3 {
+    color: var(--cor-hover);
+}
+
+footer .start p {
+    color: var(--cor-principal);
+}
+
+footer .cols {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+
+footer .cols .about-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .cols .about-col h3 {
+    font-size: 30px;
+    color: var(--cor-secundaria);
+}
+
+footer .cols .about-col p {
+    font-size: 24px;
+    color: var(--cor-terciaria);
+}
+
+footer .cols .links-col {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .cols .links-col .item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer .cols .links-col .item i {
+    font-size: 24px;
+    color: var(--cor-secundaria);
+}
+
+footer .cols .links-col .item a {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    transition: all 0.3s ease;
+}
+
+footer .cols .links-col .item a:hover {
+    color: var(--cor-secundaria);
+}
+
+@media screen and (max-width:1100px) {
+    
+    .main .content {
+        padding: 0 20%;
+    }
+
+    .navbar ul li a {
+        font-size: 18px;
+    }
+    
+    .guarantee {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .guarantee .item {
+        flex-basis: 49%;
+    }
+
+    .skills {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .skills .right {
+        margin-bottom: 100px;
+    }
+
+    .skills .right .item {
+        width: 70px;
+        height: 70px;
+    }
+
+    .skills .right .item i {
+        font-size: 50px;
+    }
+
+    .skills .left {
+        width: 500px;
+    }
+
+    .skills .left .info h3 {
+        font-size: 22px;
+    }
+
+    .skills .left .info p {
+        font-size: 12px;
+    }
+
+    footer .start {
+        width: 90%;
+        height: 40%;
+        left: 5%;
+        top: -20%;
+    }
+}
+
+@media screen and (max-width:780px) {
+    
+    .navbar ul li a {
+        font-size: 15px;
+    }
+    
+    .navbar button {
+        display: none;
+    }
+
+    .main .content {
+        padding: 0 10%;
+    }
+    
+    .main .content .title {
+        font-size: 30px;
+    }
+
+    .main .content .subtitle {
+        font-size: 20px;
+    }
+
+    .guarantee .item {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar ul li a {
+        margin-right: 0;
+    }
+
+    .navbar .logo {
+        display: none; 
+    }
+
+    .skills .left {
+        width: 100%;
+    }
+
+    .skills .left .info h3 {
+        font-size: 18px;
+    }
+
+    .skills .left .info p {
+        font-size: 12px;
+    }
+
+    .skills .left .info button {
+        padding: 8px 30px;
+        font-size: 18px;
+    }
+
+    footer .cols .about-col {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .main .content {
+        padding: 0 5%;
+    }
+
+    .main .content .title {
+        font-size: 24px;
+    }
+
+    .main .content .subtitle {
+        font-size: 14px;
+    }
+
+    .about .info h3 {
+        font-size: 22px;
+    }
+
+    .about .info p {
+        font-size: 12px;
+    }
+
+    .about .info button {
+        padding: 4px 15px;
+        font-size: 16px;
+    }
+
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills .left .info button {
+        display: none;
+    }
+
+    .skills .right {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
